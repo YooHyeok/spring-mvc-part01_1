@@ -11,6 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
+/**
+ * API - request Body Text 전송
+ */
 @WebServlet(name = "requestBodyStringServlet", urlPatterns = "/request-body-string")
 public class RequestBodyStringServlet extends HttpServlet {
     @Override
@@ -25,7 +28,7 @@ public class RequestBodyStringServlet extends HttpServlet {
          * postman 
          * POST방식
          * URL : http://localhost:8080/request-body-string
-         * Body - raw 선택
+         * Body - raw - text선택
          * hello! 입력
          */
     }
