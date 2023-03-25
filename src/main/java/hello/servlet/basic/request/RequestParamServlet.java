@@ -31,7 +31,7 @@ public class RequestParamServlet extends HttpServlet {
     private static void allParameter(HttpServletRequest request) {
         System.out.println("[전체 파라미터 조회] - start");
         request.getParameterNames().asIterator()
-                .forEachRemaining(paramName -> System.out.println("paramName" + request.getParameter(paramName))); //매개변수에 네임파라미터 명을 넣는다.
+                .forEachRemaining(paramName -> System.out.println("paramName = " + request.getParameter(paramName))); //매개변수에 네임파라미터 명을 넣는다.
         System.out.println("[전체 파라미터 조회] - end");
         System.out.println();
     }
