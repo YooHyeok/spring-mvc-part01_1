@@ -22,6 +22,17 @@
             <td>age=${item.age}</td>
         </tr>
     </c:forEach>
+    <%--
+    <%
+        for (Member member : members) {
+            out.write("<tr>\n");
+            out.write("\t<td>" + member.getId() + "</td>\n");
+            out.write("\t<td>" + member.getUsername() + "</td>\n");
+            out.write("\t<td>" + member.getAge() + "</td>\n");
+            out.write("</tr>\n");
+        }
+    %>
+    --%>
     </tbody>
 </table>
 </body>

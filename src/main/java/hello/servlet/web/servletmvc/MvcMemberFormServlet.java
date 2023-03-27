@@ -12,6 +12,7 @@ import java.io.IOException;
 public class MvcMemberFormServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("MvcMemberFormServlet.service");
         String viewPath = "/WEB-INF/views/new-form.jsp";
         RequestDispatcher dispatcher = request.getRequestDispatcher(viewPath);//controller에서 view로 이동할때 사용.
         dispatcher.forward(request,response); // jsp를 찾아서 호출한다.

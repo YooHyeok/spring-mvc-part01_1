@@ -17,6 +17,7 @@ public class MemberFormServlet extends HttpServlet {
     private MemberRepository memberRepository = MemberRepository.getInstance(); //singleton 객체 생성
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("MemberFormServlet.service");
         response.setContentType("text/html");
         response.setCharacterEncoding("utf-8");
         PrintWriter w = response.getWriter();

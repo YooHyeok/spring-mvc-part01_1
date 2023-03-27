@@ -3,9 +3,9 @@
 <%@ page import="hello.servlet.domain.member.MemberRepository" %>
 <%
     //request, response : JSP는 서블릿으로 변환되기 때문에 Service로직 호출되므로 자동으로 지원한다.
+    System.out.println("saveJsp.service");
     MemberRepository memberRepository = MemberRepository.getInstance();
 
-    System.out.println("MemberSaveServlet.service");
     String username = request.getParameter("username");
     int age = Integer.parseInt(request.getParameter("age"));
 
