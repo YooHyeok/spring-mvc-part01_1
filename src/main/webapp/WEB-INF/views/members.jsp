@@ -17,9 +17,9 @@
     <!-- JSTL core c 활용 -->
     <c:forEach var="item" items="${members}">
         <tr>
-            <td>id=${item.id}</td>
-            <td>username=${item.username}</td>
-            <td>age=${item.age}</td>
+            <td>${item.id}</td>
+            <td>${item.username}</td>
+            <td>${item.age}</td>
         </tr>
     </c:forEach>
     <%--

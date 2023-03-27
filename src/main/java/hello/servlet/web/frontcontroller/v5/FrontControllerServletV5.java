@@ -71,7 +71,7 @@ public class FrontControllerServletV5 extends HttpServlet {
 
     private MyHandlerAdapter getHandlerAdapter(Object handler) {
         for (MyHandlerAdapter adapter : handlerAdapters) {
-            if (adapter.supports(handler)) { //만약 handler가 adapter를 지원한다면 (V3)
+            if (adapter.supports(handler)) { //만약 handler가 adapter를 지원한다면 (V3 or v4)
                 return adapter;
             }
         }
