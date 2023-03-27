@@ -8,9 +8,15 @@
 <body>
     성공
     <ul>
-        <li>id=<%=((Member)request.getAttribute("member")).getId()%></li> <%-- --%>
+        <%--
+        <li>id=<%=((Member)request.getAttribute("member")).getId()%></li>
         <li>username=<%=((Member)request.getAttribute("member")).getUsername()%></li>
         <li>age=<%=((Member)request.getAttribute("member")).getAge()%></li>
+        --%>
+        <%-- EL(Expression Language)태그를 활용한 Property 접근법(Member 객체의 Getter 동작) --%>
+        <li>id=${member.id}</li>
+        <li>username=${member.username}</li>
+        <li>age=${member.age}</li>
     </ul>
     <a href="/index.html">메인</a>
 </body>
