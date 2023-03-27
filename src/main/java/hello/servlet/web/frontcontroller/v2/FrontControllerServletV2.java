@@ -1,10 +1,6 @@
 package hello.servlet.web.frontcontroller.v2;
 
 import hello.servlet.web.frontcontroller.MyView;
-import hello.servlet.web.frontcontroller.v1.ControllerV1;
-import hello.servlet.web.frontcontroller.v1.controller.MemberFormControllerV1;
-import hello.servlet.web.frontcontroller.v1.controller.MemberListControllerV1;
-import hello.servlet.web.frontcontroller.v1.controller.MemberSaveControllerV1;
 import hello.servlet.web.frontcontroller.v2.controller.MemberFormControllerV2;
 import hello.servlet.web.frontcontroller.v2.controller.MemberListControllerV2;
 import hello.servlet.web.frontcontroller.v2.controller.MemberSaveControllerV2;
@@ -19,11 +15,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 @WebServlet(name = "frontControllerServletV2", urlPatterns = "/front-controller/v2/*") // v1디렉토리 하위의 모든 url경로
-public class FrontControllerServletV1 extends HttpServlet {
+public class FrontControllerServletV2 extends HttpServlet {
 
     private Map<String, ControllerV2> controllerMap = new HashMap<>();
 
-    public FrontControllerServletV1() {
+    public FrontControllerServletV2() {
         controllerMap.put("/front-controller/v2/members/new-form", new MemberFormControllerV2());
         controllerMap.put("/front-controller/v2/members/save", new MemberSaveControllerV2());
         controllerMap.put("/front-controller/v2/members", new MemberListControllerV2());
