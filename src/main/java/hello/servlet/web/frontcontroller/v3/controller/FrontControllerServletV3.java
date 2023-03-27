@@ -37,7 +37,7 @@ public class FrontControllerServletV3 extends HttpServlet {
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
             return;
         }
-        Map<String, String> paramMap = createParamMap(request); // createMap : 파라미터 추출
+        Map<String, String> paramMap = createParamMap(request); // createParamMap : 파라미터 추출
         ModelView mv = controller.process(paramMap); //ModelView 생성자를 통해 url 논리 이름 필드인 viewName이 초기화 된다
         String viewName = mv.getViewName(); // 논리 이름을 반환한다.
         MyView view = viewResolver(viewName); // 받은 논리 이름으로 viewResolver를 통해 url주소를 생성한다.
