@@ -16,7 +16,7 @@ public class SpringMemberListControllerV1 {
     private MemberRepository memberRepository = MemberRepository.getInstance(); //MemberRepository가 @Reposiotry로 인식되지 않았으므로 아직은 Autowired할수없음
 
     @RequestMapping("/springmvc/v1/members")
-    public ModelAndView process(HttpServletRequest request, HttpServletResponse response) {
+    public ModelAndView process() {
         System.out.println("SpringMemberListControllerV1.process");
         List<Member> members = memberRepository.findAll();
         ModelAndView mv = new ModelAndView("members");
