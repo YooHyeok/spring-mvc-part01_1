@@ -2,30 +2,26 @@ package hello.servlet.web.springmvc.v1;
 
 import hello.servlet.domain.member.Member;
 import hello.servlet.domain.member.MemberRepository;
-import hello.servlet.web.frontcontroller.ModelView;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
-public class SpringMemberSaveControllerV1 {
+public class SpringMemberListControllerV1 {
     private MemberRepository memberRepository = MemberRepository.getInstance(); //MemberRepository가 @Reposiotry로 인식되지 않았으므로 아직은 Autowired할수없음
 
-    @RequestMapping("/springmvc/v1/members/save")
+    @RequestMapping("/springmvc/v1/members")
     public ModelAndView process(HttpServletRequest request, HttpServletResponse response) {
-        System.out.println("SpringMemberSaveControllerV1.process");
-        String username = request.getParameter("username");
-        int age = Integer.parseInt(request.getParameter("age"));
-        Member member = new Member(username, age);
-        memberRepository.save(member);
-
-        ModelAndView mv = new ModelAndView("save-result");
-//        mv.getModel().put("member", member); // ModelAndView의 Model은 ModelMap타입 LinkedHashMap객체이다.
-        mv.addObject("member", member);
+        System.out.println("SpringMemberListControllerV1.process");
+        List<Member> members = memberRepository.findAll();
+        ModelAndView mv = new ModelAndView("members");
+//        mv.getModel().put("membesr", members); // ModelAndView의 Model은 ModelMap타입 LinkedHashMap객체이다.
+        mv.addObject("members", members);
         return mv;
     }
 }
