@@ -1,0 +1,26 @@
+1. [basic] 패키지
+HttpServletRequest와 HttpServletResponse 객체에 대한 모든 정보를 확인한다.
+
+2. [web] 패키지
+domain/member 패키지의 회원관리 소스를 통해
+Servlet과 JSP를 사용한 MVC1구조 / Servlet MVC2구조 / FrontController 등을 학습힌다.
+
+2-1 [servlet] 패키지 - MVC1
+PrintWriter getWriter로 그려낸 HTML 문자를 HttpServletResponse 객체를통해 서버로 응답한다.
+
+2-2 [JSP] - MVC1 (webapp/jsp/members/~)
+JSP파일에서 순수 JSP언어인 <%=%>와 JSTL을 활용하여 전체 로직을 작성한다.
+
+2-3 [servletmvc] 패키지
+Model View Controller로 나뉘는 Servlet의 MVC2구조를 학습한다.
+이 과정에서 RequestDispatcher와 forward() 그리고 sendRedirect()를 경험한다.
+
+2-4 [frontcontroller] 패키지
+Servlet의 공통 코드들을 처리할 수 있는 DispatcherServlet역할을 하는 FrontController를 구현한다.
+이 과정을 통해 Spring의 DispatcherServlet의 구조를 약소하게 클론 구현하며 파악한다.
+
+2-5 springmvc 패키지
+spring의 HandlerAdapter와 HandlerMapping을 학습한다.
+Controller 인터페이스를 상속받아 컨트롤러를 구현
+@Controller 애노테이션을 통해 컨트롤러를 구현
+@RequestMapping, @RequestParam, Model, @GetMapping, @PostMapping 등 실용적인 Spring의 기능을 터득한다.

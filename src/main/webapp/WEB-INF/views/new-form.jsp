@@ -4,8 +4,8 @@
   <title>Title</title>
 </head>
 <!-- WEB-INF 디렉토리 하위의 자원들은 외부에서 호출되지 않는다. 이것은 WAS에서 정해진 룰이다.
-    기본적으로 webapp 디렉토리 하위에 있는 index.html파일은 [localohst:8080/index.html]로 열린다.
-    하지만 webapp 디렉토리 하위의 WEB-INF/views/index.html파일을 [localhost:8080/WEB-INF/views/index.html]로 입력하면 열리지 않는다.
+    기본적으로 webapp 디렉토리 하위에 있는 index.html파일은 [localohst:8080/home.html]로 열린다.
+    하지만 webapp 디렉토리 하위의 WEB-INF/views/index.html파일을 [localhost:8080/WEB-INF/views/home.html]로 입력하면 열리지 않는다.
     -->
 <body>
 <!-- form action 상대경로 사용, [현재 URL이 속한 계층 경로 + /save]

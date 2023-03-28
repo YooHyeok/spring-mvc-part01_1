@@ -34,7 +34,7 @@ public class MemberListServlet extends HelloServlet {
         w.write("   <title>Title</title>");
         w.write("</head>");
         w.write("<body>");
-        w.write("<a href=\"/index.html\">메인</a>");
+        w.write("<a href=\"/home.html\">메인</a>");
         w.write("<table>");
         w.write("   <thead>");
         w.write("   <th>id</th>");
