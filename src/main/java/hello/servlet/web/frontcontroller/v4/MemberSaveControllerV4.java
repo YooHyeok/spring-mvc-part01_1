@@ -1,8 +1,7 @@
 package hello.servlet.web.frontcontroller.v4;
 
-import hello.servlet.domain.member.Member;
-import hello.servlet.domain.member.MemberRepository;
-import hello.servlet.web.frontcontroller.ModelView;
+import hello.servlet.web.domain.member.Member;
+import hello.servlet.web.domain.member.MemberRepository;
 
 import java.util.Map;
 

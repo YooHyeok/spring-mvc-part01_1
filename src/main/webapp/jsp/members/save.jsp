@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="hello.servlet.domain.member.Member" %>
-<%@ page import="hello.servlet.domain.member.MemberRepository" %>
+<%@ page import="hello.servlet.web.domain.member.Member" %>
+<%@ page import="hello.servlet.web.domain.member.MemberRepository" %>
 <%
     //request, response : JSP는 서블릿으로 변환되기 때문에 Service로직 호출되므로 자동으로 지원한다.
     System.out.println("saveJsp.service");

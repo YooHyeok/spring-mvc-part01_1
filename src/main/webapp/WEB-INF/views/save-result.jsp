@@ -1,5 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="hello.servlet.domain.member.Member" %>
+<%@ page import="hello.servlet.web.domain.member.Member" %>
 
 <html>
 <head>

@@ -1,7 +1,7 @@
 package hello.servlet.web.servletmvc;
 
-import hello.servlet.domain.member.Member;
-import hello.servlet.domain.member.MemberRepository;
+import hello.servlet.web.domain.member.Member;
+import hello.servlet.web.domain.member.MemberRepository;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,7 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.List;
 
 @WebServlet(name = "mvcMemberListServlet" ,urlPatterns = "/servlet-mvc/members")

@@ -1,6 +1,7 @@
 package hello.servlet.domain.member;
 
-import org.assertj.core.api.Assertions;
+import hello.servlet.web.domain.member.Member;
+import hello.servlet.web.domain.member.MemberRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 
